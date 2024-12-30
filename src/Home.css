@@ -1,0 +1,134 @@
+.main-container {
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #f4f4f4;
+  font-family: 'Arial', sans-serif;
+  min-height: 100vh;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(7, 60px); /* 7 columns */
+  grid-gap: 10px;
+  margin-bottom: 20px;
+  height: 500px;
+  width: 520px;
+  border: 2px solid #ddd;
+  border-radius: 20px;
+  background-color: #fdfdfd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  overflow: auto;
+  text-align: center;
+}
+
+.seat {
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 14px;
+  text-align: center;
+}
+
+.seat:hover {
+  background-color: #ffeb3b; /* Remove transform and transition */
+}
+
+.reserved {
+  background-color: #ff4d4f;
+  color: white;
+}
+
+.available {
+  background-color: #4caf50;
+  color: white;
+}
+
+.row-label {
+  font-weight: bold;
+  color: #333;
+}
+
+.row-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.firbox, .secbox {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.secbox, .thibox {
+  height: 50px;
+  width: 200px;
+  border: 2px solid #ddd;
+  background-color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.buttonf {
+  background-color: rgb(30, 144, 255);
+  height: 40px;
+  width: 100px;
+  margin-top: 20px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.buttonf:hover {
+  background-color: #1e90ff;
+}
+
+.controls {
+  margin-left: 20px;
+  position: relative;
+}
+
+.input-container {
+  position: absolute;
+  top: 200px;
+  width: 100%;
+  text-align: center;
+}
+
+.number {
+  height: 40px;
+  width: 160px;
+  padding: 0 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 2px solid #ddd;
+}
+
+.seats-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-box {
+  height: 40px;
+  width: 260px;
+  border: 2px solid black;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: yellow;
+}
